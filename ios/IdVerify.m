@@ -6,7 +6,7 @@
 
 @implementation IdVerify
 
-RCT_EXPORT_MODULE(RCTIdVerify)
+RCT_EXPORT_MODULE(RNIdVerify)
 
 - (dispatch_queue_t)methodQueue{
     return dispatch_get_main_queue();
