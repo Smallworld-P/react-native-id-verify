@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/github_account/react-native-id-verify.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,c,cc,cpp,m,mm,swift}"
+  s.vendored_frameworks = "ios/framework/*.{framework}"
+  s.resources = "ios/bundle/*.{bundle}"
   s.requires_arc = true
 
   s.dependency "React"

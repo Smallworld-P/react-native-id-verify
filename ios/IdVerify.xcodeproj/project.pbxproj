@@ -6,6 +6,46 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F5A4E518263128EA0032F256 /* IdVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4E517263128EA0032F256 /* IdVerify.m */; };
+		F5A4E52A2631299D0032F256 /* APPSecuritySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E51C2631299D0032F256 /* APPSecuritySDK.framework */; };
+		F5A4E52B2631299D0032F256 /* ZolozIdentityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E51D2631299D0032F256 /* ZolozIdentityManager.framework */; };
+		F5A4E52C2631299E0032F256 /* APBToygerFacade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E51E2631299D0032F256 /* APBToygerFacade.framework */; };
+		F5A4E52D2631299E0032F256 /* BioAuthEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E51F2631299D0032F256 /* BioAuthEngine.framework */; };
+		F5A4E52E2631299E0032F256 /* OCRDetectSDKForTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5202631299D0032F256 /* OCRDetectSDKForTech.framework */; };
+		F5A4E52F2631299E0032F256 /* ZolozOpenPlatformBuild.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5212631299D0032F256 /* ZolozOpenPlatformBuild.framework */; };
+		F5A4E5302631299E0032F256 /* ZolozMobileRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5222631299D0032F256 /* ZolozMobileRPC.framework */; };
+		F5A4E5312631299E0032F256 /* MPRemoteLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5232631299D0032F256 /* MPRemoteLogging.framework */; };
+		F5A4E5322631299E0032F256 /* ToygerService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5242631299D0032F256 /* ToygerService.framework */; };
+		F5A4E5332631299E0032F256 /* ZolozUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5252631299D0032F256 /* ZolozUtility.framework */; };
+		F5A4E5342631299E0032F256 /* ZolozSensorServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5262631299D0032F256 /* ZolozSensorServices.framework */; };
+		F5A4E5352631299E0032F256 /* BioAuthAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5272631299D0032F256 /* BioAuthAPI.framework */; };
+		F5A4E5362631299E0032F256 /* AlipayVerifySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5282631299D0032F256 /* AlipayVerifySDK.framework */; };
+		F5A4E5372631299E0032F256 /* AliyunIdentityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5292631299D0032F256 /* AliyunIdentityManager.framework */; };
+		F5A4E53E26312ABB0032F256 /* BioAuthEngine.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5A4E53926312ABB0032F256 /* BioAuthEngine.bundle */; };
+		F5A4E53F26312ABB0032F256 /* OCRXMedia.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5A4E53A26312ABB0032F256 /* OCRXMedia.bundle */; };
+		F5A4E54026312ABB0032F256 /* AlipayVerifySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5A4E53B26312ABB0032F256 /* AlipayVerifySDK.bundle */; };
+		F5A4E54126312ABB0032F256 /* APBToygerFacade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5A4E53C26312ABB0032F256 /* APBToygerFacade.bundle */; };
+		F5A4E54226312ABB0032F256 /* ToygerService.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5A4E53D26312ABB0032F256 /* ToygerService.bundle */; };
+		F5A4E5482631517A0032F256 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E5472631517A0032F256 /* libc++abi.tbd */; };
+		F5A4E54B263151890032F256 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E54A263151890032F256 /* libicucore.tbd */; };
+		F5A4E54E263151980032F256 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E54D263151980032F256 /* libc++.1.tbd */; };
+		F5A4E551263151A20032F256 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E550263151A20032F256 /* libz.1.1.3.tbd */; };
+		F5A4E554263151AA0032F256 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E553263151AA0032F256 /* WebKit.framework */; };
+		F5A4E556263151B90032F256 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E555263151B90032F256 /* UserNotifications.framework */; };
+		F5A4E558263151C50032F256 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E557263151C50032F256 /* Accelerate.framework */; };
+		F5A4E55A263151CE0032F256 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E559263151CE0032F256 /* AssetsLibrary.framework */; };
+		F5A4E55C263151D60032F256 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E55B263151D60032F256 /* ImageIO.framework */; };
+		F5A4E55E263152890032F256 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E55D263152890032F256 /* AVFoundation.framework */; };
+		F5A4E560263152960032F256 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E55F263152960032F256 /* CoreMotion.framework */; };
+		F5A4E562263152A50032F256 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E561263152A50032F256 /* CoreMedia.framework */; };
+		F5A4E564263152B10032F256 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E563263152B10032F256 /* CoreLocation.framework */; };
+		F5A4E566263152BB0032F256 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E565263152BB0032F256 /* CoreFoundation.framework */; };
+		F5A4E568263152C80032F256 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E567263152C80032F256 /* QuartzCore.framework */; };
+		F5A4E56A263153050032F256 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E569263153050032F256 /* CoreTelephony.framework */; };
+		F5A4E56C2631530D0032F256 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A4E56B2631530D0032F256 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +60,44 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libIdVerify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIdVerify.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A4E516263128EA0032F256 /* IdVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdVerify.h; sourceTree = "<group>"; };
+		F5A4E517263128EA0032F256 /* IdVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdVerify.m; sourceTree = "<group>"; };
+		F5A4E51C2631299D0032F256 /* APPSecuritySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APPSecuritySDK.framework; sourceTree = "<group>"; };
+		F5A4E51D2631299D0032F256 /* ZolozIdentityManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozIdentityManager.framework; sourceTree = "<group>"; };
+		F5A4E51E2631299D0032F256 /* APBToygerFacade.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APBToygerFacade.framework; sourceTree = "<group>"; };
+		F5A4E51F2631299D0032F256 /* BioAuthEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BioAuthEngine.framework; sourceTree = "<group>"; };
+		F5A4E5202631299D0032F256 /* OCRDetectSDKForTech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCRDetectSDKForTech.framework; sourceTree = "<group>"; };
+		F5A4E5212631299D0032F256 /* ZolozOpenPlatformBuild.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozOpenPlatformBuild.framework; sourceTree = "<group>"; };
+		F5A4E5222631299D0032F256 /* ZolozMobileRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozMobileRPC.framework; sourceTree = "<group>"; };
+		F5A4E5232631299D0032F256 /* MPRemoteLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPRemoteLogging.framework; sourceTree = "<group>"; };
+		F5A4E5242631299D0032F256 /* ToygerService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ToygerService.framework; sourceTree = "<group>"; };
+		F5A4E5252631299D0032F256 /* ZolozUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozUtility.framework; sourceTree = "<group>"; };
+		F5A4E5262631299D0032F256 /* ZolozSensorServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozSensorServices.framework; sourceTree = "<group>"; };
+		F5A4E5272631299D0032F256 /* BioAuthAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BioAuthAPI.framework; sourceTree = "<group>"; };
+		F5A4E5282631299D0032F256 /* AlipayVerifySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipayVerifySDK.framework; sourceTree = "<group>"; };
+		F5A4E5292631299D0032F256 /* AliyunIdentityManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunIdentityManager.framework; sourceTree = "<group>"; };
+		F5A4E53926312ABB0032F256 /* BioAuthEngine.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BioAuthEngine.bundle; sourceTree = "<group>"; };
+		F5A4E53A26312ABB0032F256 /* OCRXMedia.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OCRXMedia.bundle; sourceTree = "<group>"; };
+		F5A4E53B26312ABB0032F256 /* AlipayVerifySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipayVerifySDK.bundle; sourceTree = "<group>"; };
+		F5A4E53C26312ABB0032F256 /* APBToygerFacade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = APBToygerFacade.bundle; sourceTree = "<group>"; };
+		F5A4E53D26312ABB0032F256 /* ToygerService.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ToygerService.bundle; sourceTree = "<group>"; };
+		F5A4E5472631517A0032F256 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libc++abi.tbd"; sourceTree = DEVELOPER_DIR; };
+		F5A4E54A263151890032F256 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		F5A4E54D263151980032F256 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libc++.1.tbd"; sourceTree = DEVELOPER_DIR; };
+		F5A4E550263151A20032F256 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libz.1.1.3.tbd; sourceTree = DEVELOPER_DIR; };
+		F5A4E553263151AA0032F256 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/iOSSupport/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E555263151B90032F256 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E557263151C50032F256 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E559263151CE0032F256 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/iOSSupport/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E55B263151D60032F256 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E55D263152890032F256 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E55F263152960032F256 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E561263152A50032F256 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E563263152B10032F256 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E565263152BB0032F256 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E567263152C80032F256 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E569263153050032F256 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		F5A4E56B2631530D0032F256 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +105,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A4E56C2631530D0032F256 /* CoreGraphics.framework in Frameworks */,
+				F5A4E56A263153050032F256 /* CoreTelephony.framework in Frameworks */,
+				F5A4E568263152C80032F256 /* QuartzCore.framework in Frameworks */,
+				F5A4E566263152BB0032F256 /* CoreFoundation.framework in Frameworks */,
+				F5A4E564263152B10032F256 /* CoreLocation.framework in Frameworks */,
+				F5A4E562263152A50032F256 /* CoreMedia.framework in Frameworks */,
+				F5A4E560263152960032F256 /* CoreMotion.framework in Frameworks */,
+				F5A4E55E263152890032F256 /* AVFoundation.framework in Frameworks */,
+				F5A4E55C263151D60032F256 /* ImageIO.framework in Frameworks */,
+				F5A4E55A263151CE0032F256 /* AssetsLibrary.framework in Frameworks */,
+				F5A4E558263151C50032F256 /* Accelerate.framework in Frameworks */,
+				F5A4E556263151B90032F256 /* UserNotifications.framework in Frameworks */,
+				F5A4E554263151AA0032F256 /* WebKit.framework in Frameworks */,
+				F5A4E551263151A20032F256 /* libz.1.1.3.tbd in Frameworks */,
+				F5A4E54E263151980032F256 /* libc++.1.tbd in Frameworks */,
+				F5A4E54B263151890032F256 /* libicucore.tbd in Frameworks */,
+				F5A4E5482631517A0032F256 /* libc++abi.tbd in Frameworks */,
+				F5A4E5332631299E0032F256 /* ZolozUtility.framework in Frameworks */,
+				F5A4E52A2631299D0032F256 /* APPSecuritySDK.framework in Frameworks */,
+				F5A4E5352631299E0032F256 /* BioAuthAPI.framework in Frameworks */,
+				F5A4E52D2631299E0032F256 /* BioAuthEngine.framework in Frameworks */,
+				F5A4E52E2631299E0032F256 /* OCRDetectSDKForTech.framework in Frameworks */,
+				F5A4E5322631299E0032F256 /* ToygerService.framework in Frameworks */,
+				F5A4E5372631299E0032F256 /* AliyunIdentityManager.framework in Frameworks */,
+				F5A4E5362631299E0032F256 /* AlipayVerifySDK.framework in Frameworks */,
+				F5A4E52B2631299D0032F256 /* ZolozIdentityManager.framework in Frameworks */,
+				F5A4E5302631299E0032F256 /* ZolozMobileRPC.framework in Frameworks */,
+				F5A4E5312631299E0032F256 /* MPRemoteLogging.framework in Frameworks */,
+				F5A4E52F2631299E0032F256 /* ZolozOpenPlatformBuild.framework in Frameworks */,
+				F5A4E5342631299E0032F256 /* ZolozSensorServices.framework in Frameworks */,
+				F5A4E52C2631299E0032F256 /* APBToygerFacade.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +153,70 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				F5A4E51A263129290032F256 /* bundle */,
+				F5A4E51B263129290032F256 /* framework */,
+				F5A4E516263128EA0032F256 /* IdVerify.h */,
+				F5A4E517263128EA0032F256 /* IdVerify.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				F5A4E5462631517A0032F256 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		F5A4E51A263129290032F256 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				F5A4E53B26312ABB0032F256 /* AlipayVerifySDK.bundle */,
+				F5A4E53C26312ABB0032F256 /* APBToygerFacade.bundle */,
+				F5A4E53926312ABB0032F256 /* BioAuthEngine.bundle */,
+				F5A4E53A26312ABB0032F256 /* OCRXMedia.bundle */,
+				F5A4E53D26312ABB0032F256 /* ToygerService.bundle */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		F5A4E51B263129290032F256 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				F5A4E5282631299D0032F256 /* AlipayVerifySDK.framework */,
+				F5A4E5292631299D0032F256 /* AliyunIdentityManager.framework */,
+				F5A4E51E2631299D0032F256 /* APBToygerFacade.framework */,
+				F5A4E51C2631299D0032F256 /* APPSecuritySDK.framework */,
+				F5A4E5272631299D0032F256 /* BioAuthAPI.framework */,
+				F5A4E51F2631299D0032F256 /* BioAuthEngine.framework */,
+				F5A4E5232631299D0032F256 /* MPRemoteLogging.framework */,
+				F5A4E5202631299D0032F256 /* OCRDetectSDKForTech.framework */,
+				F5A4E5242631299D0032F256 /* ToygerService.framework */,
+				F5A4E51D2631299D0032F256 /* ZolozIdentityManager.framework */,
+				F5A4E5222631299D0032F256 /* ZolozMobileRPC.framework */,
+				F5A4E5212631299D0032F256 /* ZolozOpenPlatformBuild.framework */,
+				F5A4E5262631299D0032F256 /* ZolozSensorServices.framework */,
+				F5A4E5252631299D0032F256 /* ZolozUtility.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		F5A4E5462631517A0032F256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A4E56B2631530D0032F256 /* CoreGraphics.framework */,
+				F5A4E569263153050032F256 /* CoreTelephony.framework */,
+				F5A4E567263152C80032F256 /* QuartzCore.framework */,
+				F5A4E565263152BB0032F256 /* CoreFoundation.framework */,
+				F5A4E563263152B10032F256 /* CoreLocation.framework */,
+				F5A4E561263152A50032F256 /* CoreMedia.framework */,
+				F5A4E55F263152960032F256 /* CoreMotion.framework */,
+				F5A4E55D263152890032F256 /* AVFoundation.framework */,
+				F5A4E55B263151D60032F256 /* ImageIO.framework */,
+				F5A4E559263151CE0032F256 /* AssetsLibrary.framework */,
+				F5A4E557263151C50032F256 /* Accelerate.framework */,
+				F5A4E555263151B90032F256 /* UserNotifications.framework */,
+				F5A4E553263151AA0032F256 /* WebKit.framework */,
+				F5A4E550263151A20032F256 /* libz.1.1.3.tbd */,
+				F5A4E54D263151980032F256 /* libc++.1.tbd */,
+				F5A4E54A263151890032F256 /* libicucore.tbd */,
+				F5A4E5472631517A0032F256 /* libc++abi.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -58,6 +229,7 @@
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
+				F5A4E538263129F70032F256 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -100,11 +272,27 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F5A4E538263129F70032F256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A4E54226312ABB0032F256 /* ToygerService.bundle in Resources */,
+				F5A4E53F26312ABB0032F256 /* OCRXMedia.bundle in Resources */,
+				F5A4E53E26312ABB0032F256 /* BioAuthEngine.bundle in Resources */,
+				F5A4E54026312ABB0032F256 /* AlipayVerifySDK.bundle in Resources */,
+				F5A4E54126312ABB0032F256 /* APBToygerFacade.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A4E518263128EA0032F256 /* IdVerify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +413,10 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -241,6 +433,10 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
