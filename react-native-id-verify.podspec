@@ -23,6 +23,12 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,c,cc,cpp,m,mm,swift}"
   s.vendored_frameworks = "ios/framework/*.{framework}"
   s.resources = "ios/bundle/*.{bundle}"
+  s.library = "libz.1.1.3","libz++.1","libicucore","libc++abi"
+  s.frameworks =  "CoreGraphics","CoreTelephony","QuartzCore",
+                  "CoreFoundation","CoreLocation","CoreMedia",
+                  "CoreMotion","AVFoundation","ImageIO",
+                  "AssetsLibrary","Accelerate","UserNotifications",
+                  "WebKit"
   s.requires_arc = true
 
   s.dependency "React"
