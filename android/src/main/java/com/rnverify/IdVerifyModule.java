@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
-//import com.alipay.mobile.android.verify.sdk.ServiceFactory;
+import com.alipay.mobile.android.verify.sdk.ServiceFactory;
 
 public class IdVerifyModule extends ReactContextBaseJavaModule {
 
@@ -19,6 +19,7 @@ public class IdVerifyModule extends ReactContextBaseJavaModule {
     public IdVerifyModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
+
     }
 
     @Override
