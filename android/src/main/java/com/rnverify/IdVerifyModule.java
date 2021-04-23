@@ -30,7 +30,7 @@ public class IdVerifyModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "IdVerify";
+        return "RNIdVerify";
     }
 
     @ReactMethod
