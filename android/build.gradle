@@ -62,7 +62,7 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'  // From node_modules
 
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-//    implementation 'com.alibaba:fastjson:1.2.48@jar'
+    implementation 'com.alibaba:fastjson:1.2.48@jar'
 //    implementation(name: 'deviceid-release-6.0.6.20201030', ext: 'aar')
 //    implementation(name: 'faceverify-1.0.1.210220135742', ext: 'aar')
 //    implementation(name: 'stlport_shared-1.0', ext: 'aar')
