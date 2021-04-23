@@ -12,6 +12,12 @@ RCT_EXPORT_MODULE(RNIdVerify)
     return dispatch_get_main_queue();
 }
 
+/// 获取bizcode
+/// @param callback 返回bizcode
+RCT_EXPORT_METHOD(getBizcode:(RCTPromiseResolveBlock)callback) {
+    NSString *bizcode = [[APVerifyService sharedService] bizCode];
+    callback(@{@"bizcode": bizcode});
+}
 
 /// 开始认证
 /// @param url 认证url，从商家服务端获得
