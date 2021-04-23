@@ -22,14 +22,12 @@ RCT_EXPORT_METHOD(getBizcode:(RCTPromiseResolveBlock)callback) {
 /// 开始认证
 /// @param url 认证url，从商家服务端获得
 /// @param certifyId 认证流水号，从商家服务端获得
+/// @param bizcode 表示是否唤起支付宝进行验证
 /// @param callback 返回状态码
 RCT_EXPORT_METHOD(startVerify:(NSString *)url
                   certifyId:(NSString *)certifyId
+                  bizcode:(NSString *)bizcode
                   callback:(RCTPromiseResolveBlock)callback) {
-    NSString *bizcode = [[APVerifyService sharedService] bizCode];
-    /// url: 认证url，从商家服务端获得
-    /// certifyId: 认证流水号，从商家服务端获得
-    /// bizcode: 表示是否唤起支付宝进行验证
     NSDictionary *config = @{
         @"url": url,
         @"certifyId": certifyId,

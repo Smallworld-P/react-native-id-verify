@@ -11,7 +11,8 @@ declare module "react-native-id-verify" {
          * 开始身份认证
          * @param url 认证url，从商家服务端获得
          * @param certifyId 认证流水号，从商家服务端获得
+         * @param bizcode 表示是否唤起支付宝进行验证
          */
-        static startVerify(url: string, certifyId: string): Promise<any>;
+        static startVerify(url: string, certifyId: string, bizcode: string): Promise<any>;
     }
 }
