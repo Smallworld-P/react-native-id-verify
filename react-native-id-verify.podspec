@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,c,cc,cpp,m,mm,swift}"
   s.vendored_frameworks = "ios/framework/*.{framework}"
   s.resources = "ios/bundle/*.{bundle}"
-  s.library = "z.1.1.3","z++.1","icucore","c++abi"
+  s.library = "z.1.1.3","c++.1","icucore","c++abi"
   s.frameworks =  "CoreGraphics","CoreTelephony","QuartzCore",
                   "CoreFoundation","CoreLocation","CoreMedia",
                   "CoreMotion","AVFoundation","ImageIO",
