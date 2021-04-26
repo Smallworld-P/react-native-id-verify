@@ -14,9 +14,14 @@ RCT_EXPORT_MODULE(RNIdVerify)
 
 /// 获取bizcode
 /// @param callback 返回bizcode
-RCT_EXPORT_METHOD(getBizcode:(RCTPromiseResolveBlock)callback) {
+RCT_EXPORT_METHOD(getBizCode:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject) {
     NSString *bizcode = [[APVerifyService sharedService] bizCode];
-    callback(bizcode);
+    if (![bizcode isEqualToString:@""] || bizcode != nil) {
+        resolve(bizcode);
+    } else {
+        reject(@"bizcode is null", bizcode, nil);
+    }
 }
 
 /// 开始认证
@@ -27,14 +32,18 @@ RCT_EXPORT_METHOD(getBizcode:(RCTPromiseResolveBlock)callback) {
 RCT_EXPORT_METHOD(startVerify:(NSString *)url
                   certifyId:(NSString *)certifyId
                   bizcode:(NSString *)bizcode
-                  callback:(RCTPromiseResolveBlock)callback) {
+                  resolve:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject) {
     NSDictionary *config = @{
         @"url": url,
         @"certifyId": certifyId,
         @"bizcode": bizcode
     };
     [[APVerifyService sharedService] startVerifyService:config target:self block:^(NSMutableDictionary *resultDic) {
-        callback(resultDic);
+        if (resultDic == nil) {
+            reject(@"result is null",resultDic, nil);
+        }
+        resolve(resultDic);
     }];
 }
 
