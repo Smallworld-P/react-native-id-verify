@@ -42,8 +42,9 @@ RCT_EXPORT_METHOD(startVerify:(NSString *)url
     [[APVerifyService sharedService] startVerifyService:config target:self block:^(NSMutableDictionary *resultDic) {
         if (resultDic == nil) {
             reject(@"result is null",resultDic, nil);
+        } else {
+            resolve(resultDic);
         }
-        resolve(resultDic);
     }];
 }
 
