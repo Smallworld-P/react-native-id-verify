@@ -29,9 +29,9 @@ RCT_EXPORT_METHOD(getBizCode:(RCTPromiseResolveBlock)resolve
 /// @param certifyId 认证流水号，从商家服务端获得
 /// @param bizcode 表示是否唤起支付宝进行验证
 /// @param callback 返回状态码
-RCT_EXPORT_METHOD(startVerify:(NSString *)url
+RCT_EXPORT_METHOD(startVerify:(NSString *)bizcode
                   certifyId:(NSString *)certifyId
-                  bizcode:(NSString *)bizcode
+                  url:(NSString *)url
                   resolve:(RCTPromiseResolveBlock)resolve
                   reject:(RCTPromiseRejectBlock)reject) {
     NSDictionary *config = @{
@@ -41,7 +41,7 @@ RCT_EXPORT_METHOD(startVerify:(NSString *)url
     };
     [[APVerifyService sharedService] startVerifyService:config target:self block:^(NSMutableDictionary *resultDic) {
         if (resultDic == nil) {
-            reject(@"result is null",resultDic, nil);
+            reject(@"result is null", @"start verify error", nil);
         } else {
             resolve(resultDic);
         }
