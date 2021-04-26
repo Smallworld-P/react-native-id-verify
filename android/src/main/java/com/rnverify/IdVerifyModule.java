@@ -7,6 +7,7 @@ import android.telecom.Call;
 import android.widget.Toast;
 
 import com.alipay.mobile.android.verify.sdk.interfaces.ICallback;
+import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -34,25 +35,25 @@ public class IdVerifyModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    private void getBizCode(Callback callback) {
-        callback.invoke(ServiceFactory.build().getBizCode(reactContext));
+    private void getBizCode(Promise promise) {
+        promise.resolve(ServiceFactory.build().getBizCode(reactContext));
     }
 
 
     @ReactMethod
-    public void startVerify(String bizCode, String certifyId, String url, Callback callback) {
+    public void startVerify(String bizCode, String certifyId, String url, Promise promise) {
         // 封装认证数据
         JSONObject requestInfo = new JSONObject();
         requestInfo.put("url", url);
         requestInfo.put("certifyId", certifyId);
         requestInfo.put("bizCode", bizCode);
 
-        final Callback call = callback;
+        final Promise pro = promise;
         // 发起认证
         ServiceFactory.build().startService(reactContext.getCurrentActivity(), requestInfo, new ICallback() {
             @Override
             public void onResponse(Map<String, String> response) {
-                call.invoke(response);
+                pro.resolve(response);
             }
         });
     }
