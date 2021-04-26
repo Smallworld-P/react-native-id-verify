@@ -9,5 +9,5 @@ export declare function getBizCode(): Promise<string>;
  * @param certifyId 认证流水号，从商家服务端获得
  * @param bizcode 表示是否唤起支付宝进行验证
  */
-export declare function startVerify(url: string, certifyId: string, bizcode: string): Promise<any>;
+export declare function startVerify(bizcode: string, certifyId: string, url: string): Promise<any>;
 

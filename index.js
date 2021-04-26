@@ -20,6 +20,6 @@ export function getBizCode() {
  * @param certifyId 认证流水号，从商家服务端获得
  * @param bizcode 表示是否唤起支付宝进行验证
  */
-export function startVerify(url, certifyId, bizcode) {
-    return idVerifyModule.startVerify(url, certifyId, bizcode)
+ export function startVerify(bizcode, certifyId, url) {
+    return idVerifyModule.startVerify(bizcode, certifyId, url)
 }
