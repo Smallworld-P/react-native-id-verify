@@ -39,13 +39,38 @@ RCT_EXPORT_METHOD(startVerify:(NSString *)bizcode
         @"certifyId": certifyId,
         @"bizcode": bizcode
     };
-    [[APVerifyService sharedService] startVerifyService:config target:self block:^(NSMutableDictionary *resultDic) {
+    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+    [[APVerifyService sharedService] startVerifyService:config target:currentVC block:^(NSMutableDictionary *resultDic) {
         if (resultDic == nil) {
             reject(@"result is null", @"start verify error", nil);
         } else {
             resolve(resultDic);
         }
     }];
+}
+
+/// 获取当前控制器
+- (UIViewController *)getCurrentVCFrom:(UIViewController *)rootVC
+{
+    UIViewController *currentVC;
+    if ([rootVC presentedViewController]) {
+        // 视图是被presented出来的
+        rootVC = [rootVC presentedViewController];
+    }
+
+    if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        // 根视图为UITabBarController
+        currentVC = [self getCurrentVCFrom:[(UITabBarController *)rootVC selectedViewController]];
+    } else if ([rootVC isKindOfClass:[UINavigationController class]]){
+        // 根视图为UINavigationController
+        currentVC = [self getCurrentVCFrom:[(UINavigationController *)rootVC visibleViewController]];
+    } else {
+        // 根视图为非导航类
+        currentVC = rootVC;
+    }
+    
+    return currentVC;
 }
 
 
