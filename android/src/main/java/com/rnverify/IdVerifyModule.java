@@ -53,7 +53,7 @@ public class IdVerifyModule extends ReactContextBaseJavaModule {
         ServiceFactory.build().startService(reactContext.getCurrentActivity(), requestInfo, new ICallback() {
             @Override
             public void onResponse(Map<String, String> response) {
-                pro.resolve(response);
+                pro.resolve(JSON.toJSONString(response));
             }
         });
     }
