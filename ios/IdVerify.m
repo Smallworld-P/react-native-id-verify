@@ -39,15 +39,18 @@ RCT_EXPORT_METHOD(startVerify:(NSString *)bizcode
         @"certifyId": certifyId,
         @"bizcode": bizcode
     };
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
-    [[APVerifyService sharedService] startVerifyService:config target:currentVC block:^(NSMutableDictionary *resultDic) {
-        if (resultDic == nil) {
-            reject(@"result is null", @"start verify error", nil);
-        } else {
-            resolve(resultDic);
-        }
-    }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+        [[APVerifyService sharedService] startVerifyService:config target:currentVC block:^(NSMutableDictionary *resultDic) {
+            if (resultDic == nil) {
+                reject(@"result is null", @"start verify error", nil);
+            } else {
+                resolve(resultDic);
+            }
+        }];
+    });
 }
 
 /// 获取当前控制器
